@@ -59,11 +59,11 @@ body {
 
 /* Virtual Joystick */
 #joystick-zone {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 5; /* Above map and player, below popups */
     touch-action: none; /* Prevent browser swipe scrolling */
 }
