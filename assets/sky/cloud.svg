@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Cloud body (transparent background) -->
+  <!-- Bottom flat base -->
+  <rect x="4"  y="22" width="24" height="4" fill="#FFFFFF"/>
+  <!-- Wide middle -->
+  <rect x="2"  y="17" width="28" height="7" fill="#FFFFFF"/>
+  <!-- Top bumps -->
+  <rect x="6"  y="13" width="9"  height="6" fill="#FFFFFF"/>
+  <rect x="17" y="11" width="10" height="8" fill="#FFFFFF"/>
+  <rect x="12" y="15" width="8"  height="4" fill="#FFFFFF"/>
+  <!-- Bottom shadow band -->
+  <rect x="4"  y="24" width="24" height="2" fill="#D8EEFF"/>
+  <rect x="2"  y="22" width="28" height="2" fill="#E8F4FF"/>
+  <!-- Highlight on tallest bump -->
+  <rect x="19" y="11" width="5"  height="2" fill="#F8FCFF"/>
+  <rect x="7"  y="13" width="4"  height="2" fill="#F8FCFF"/>
+</svg>

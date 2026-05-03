@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Soil base -->
+  <rect width="32" height="32" fill="#8C6239"/>
+  <!-- Soil texture -->
+  <rect x="3" y="13" width="4" height="2" fill="#7A5230"/>
+  <rect x="14" y="19" width="5" height="2" fill="#7A5230"/>
+  <rect x="22" y="15" width="4" height="2" fill="#9E6B45"/>
+  <rect x="8" y="26" width="5" height="2" fill="#7A5230"/>
+  <rect x="24" y="23" width="5" height="2" fill="#9E6B45"/>
+  <rect x="16" y="28" width="4" height="1" fill="#7A5230"/>
+  <!-- Grass layer -->
+  <rect x="0" y="7" width="32" height="5" fill="#5C9E31"/>
+  <!-- Grass blade tips -->
+  <rect x="1"  y="3" width="2" height="6" fill="#74BC48"/>
+  <rect x="4"  y="5" width="2" height="4" fill="#5C9E31"/>
+  <rect x="7"  y="3" width="2" height="6" fill="#4A8025"/>
+  <rect x="10" y="4" width="2" height="5" fill="#74BC48"/>
+  <rect x="13" y="3" width="2" height="6" fill="#5C9E31"/>
+  <rect x="16" y="5" width="2" height="4" fill="#4A8025"/>
+  <rect x="19" y="3" width="2" height="6" fill="#74BC48"/>
+  <rect x="22" y="4" width="2" height="5" fill="#5C9E31"/>
+  <rect x="25" y="3" width="2" height="6" fill="#4A8025"/>
+  <rect x="28" y="5" width="2" height="4" fill="#74BC48"/>
+</svg>

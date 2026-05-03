@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Sand base -->
+  <rect width="32" height="32" fill="#D4B483"/>
+  <!-- Sand grain texture (light) -->
+  <rect x="3"  y="4"  width="2" height="1" fill="#E8CA98"/>
+  <rect x="10" y="9"  width="3" height="1" fill="#E8CA98"/>
+  <rect x="17" y="5"  width="2" height="1" fill="#E8CA98"/>
+  <rect x="24" y="12" width="3" height="1" fill="#E8CA98"/>
+  <rect x="7"  y="17" width="2" height="1" fill="#E8CA98"/>
+  <rect x="20" y="21" width="3" height="1" fill="#E8CA98"/>
+  <rect x="2"  y="26" width="4" height="1" fill="#E8CA98"/>
+  <rect x="14" y="28" width="3" height="1" fill="#E8CA98"/>
+  <rect x="27" y="24" width="3" height="1" fill="#E8CA98"/>
+  <!-- Sand grain texture (dark) -->
+  <rect x="7"  y="2"  width="2" height="1" fill="#C0A06E"/>
+  <rect x="19" y="7"  width="3" height="1" fill="#C0A06E"/>
+  <rect x="26" y="15" width="2" height="1" fill="#C0A06E"/>
+  <rect x="4"  y="22" width="3" height="1" fill="#C0A06E"/>
+  <rect x="13" y="14" width="2" height="1" fill="#C0A06E"/>
+  <rect x="23" y="28" width="4" height="1" fill="#C0A06E"/>
+  <rect x="9"  y="29" width="2" height="1" fill="#C0A06E"/>
+  <!-- Subtle top shading -->
+  <rect x="0" y="0" width="32" height="2" fill="#BF9A68" opacity="0.5"/>
+</svg>

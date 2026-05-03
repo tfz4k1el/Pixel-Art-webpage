@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chunnu Day Walk</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="game-container">
+            <img id="bg-map" src="../assets/Frame 5.svg" alt="Map background">
+            <img id="player" src="../assets/characters/Character%200.png" alt="Player Character">
+            
+            <!-- Virtual Joystick Zone -->
+            <div id="joystick-zone">
+                <div id="joystick-base" class="joystick-hidden">
+                    <div id="joystick-stick"></div>
+                </div>
+            </div>
+
+            <!-- Popup Container -->
+            <div id="popup-container" class="popup-hidden">
+                <img src="../assets/pop%20up.png" alt="Rock Interaction Popup">
+                <div class="popup-text">
+                    <h3>You found a letter</h3>
+                    <p>Tap or press Enter to open</p>
+                </div>
+            </div>
+
+            <!-- Identity Modal -->
+            <div id="identity-modal" class="popup-hidden">
+                <div class="modal-content">
+                    <h3>Confirm Identity</h3>
+                    <input type="text" id="identity-input" placeholder="Who are you?">
+                    <button id="identity-submit">Confirm</button>
+                </div>
+            </div>
+
+            <!-- Paper Modal -->
+            <div id="paper-modal" class="popup-hidden">
+                <button id="close-paper-btn" aria-label="Close">&times;</button>
+                <div class="paper-content">
+                    <img src="../assets/Paper.svg" class="paper-bg" alt="Paper Background">
+                    <div class="paper-text">
+                        Happy Birthday Chunnuuuuu!!!<br><br>
+                        Sooooooo hehehhehe....<br>
+                        Ok so... I’m so happy you’re turning 20.. well you just caught up to me but I’ll be turning 21 soon so you’re gonna be down again lol. You can never get ahead of me hehehehhe<br><br>
+                        Well anywayssss I wish you’ll have really fulfilling years coming up. I know you are capable of a lot. You’re doing well and you’ll continue doing so. I’m so proud of you and always will be.<br><br>
+                        Also I wanna spend all the coming birthday of yours with you... You’re so damn pretty in ways I can never let you know.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hidden canvas for pixel perfect collision detection -->
+    <canvas id="hitbox-canvas" style="display: none;"></canvas>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

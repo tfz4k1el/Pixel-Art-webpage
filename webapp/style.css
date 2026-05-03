@@ -1,0 +1,295 @@
+body {
+    background-color: #2D2A34;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#game-container {
+    position: relative;
+    /* Map base aspect ratio 264 / 352 = 0.75 */
+    width: 100%;
+    max-width: 75vh;
+    aspect-ratio: 264 / 352;
+    overflow: hidden;
+}
+
+#bg-map {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12%; /* Adjusted for proper character size */
+    height: auto;
+    z-index: 2;
+    /* Centered horizontally, feet at the bottom */
+    transform: translate(-50%, -100%) scaleX(1);
+    transform-origin: bottom center;
+    image-rendering: pixelated;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.3));
+    transition: transform 0.1s ease-out; /* Smooth flip */
+}
+
+/* Virtual Joystick */
+#joystick-zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5; /* Above map and player, below popups */
+    touch-action: none; /* Prevent browser swipe scrolling */
+}
+
+#joystick-base {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: opacity 0.2s;
+    backdrop-filter: blur(5px);
+}
+
+#joystick-base.joystick-hidden {
+    opacity: 0;
+}
+
+#joystick-stick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+#popup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index: 10;
+    width: 80%; /* Takes up more of the screen to fit both items, but elements inside will be smaller */
+    max-width: 400px;
+    background: rgba(45, 42, 52, 0.85); /* Semi-transparent dark background */
+    border-radius: 16px;
+    padding: 15px;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: auto; /* Allow tapping the popup */
+    cursor: pointer;
+}
+
+#popup-container.popup-visible {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup-container img {
+    width: 40%; /* Made the image smaller */
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+
+.popup-text {
+    width: 60%;
+    color: #fff;
+}
+
+.popup-text h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #92CB78;
+}
+
+.popup-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ccc;
+}
+
+#identity-modal, #paper-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#identity-modal.popup-visible, #paper-modal.popup-visible {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: rgba(45, 42, 52, 0.95);
+    padding: 20px 30px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    border: 2px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.modal-content h3 {
+    margin: 0 0 15px 0;
+    color: #92CB78;
+}
+
+.modal-content input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    font-family: inherit;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #92CB78;
+    color: #1A171E;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform 0.1s;
+}
+
+.modal-content button:active {
+    transform: scale(0.95);
+}
+
+#paper-modal {
+    width: 85%;
+    max-width: 450px;
+}
+
+.paper-content {
+    position: relative;
+    width: 100%;
+}
+
+.paper-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+}
+
+.paper-text {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    right: 12%;
+    bottom: 15%;
+    color: #523A2A;
+    font-family: 'Georgia', serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    overflow-y: auto;
+    font-weight: 500;
+}
+
+/* Custom Scrollbar for Paper Text */
+.paper-text::-webkit-scrollbar {
+    width: 6px;
+}
+
+.paper-text::-webkit-scrollbar-track {
+    background: rgba(82, 58, 42, 0.1);
+    border-radius: 4px;
+}
+
+.paper-text::-webkit-scrollbar-thumb {
+    background: rgba(82, 58, 42, 0.4);
+    border-radius: 4px;
+}
+
+.paper-text::-webkit-scrollbar-thumb:hover {
+    background: rgba(82, 58, 42, 0.6);
+}
+
+#close-paper-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(82, 58, 42, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+    transition: background 0.2s, transform 0.1s;
+    padding: 0;
+}
+
+#close-paper-btn:hover {
+    background: rgba(82, 58, 42, 0.9);
+}
+
+#close-paper-btn:active {
+    transform: scale(0.9);
+}

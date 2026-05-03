@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Wind state 2: canopy drifts 2px LEFT, trunk stays rooted centre -->
+  <!-- Trunk (fixed) -->
+  <rect x="13" y="21" width="6"  height="11" fill="#6B4423"/>
+  <rect x="13" y="21" width="1"  height="11" fill="#8B5A30"/>
+  <rect x="18" y="21" width="1"  height="11" fill="#523317"/>
+  <rect x="10" y="27" width="12" height="5"  fill="#6B4423"/>
+
+  <!-- Upper trunk leaning slightly left (-1) -->
+  <rect x="12" y="16" width="5"  height="6"  fill="#6B4423"/>
+  <rect x="12" y="16" width="1"  height="6"  fill="#8B5A30"/>
+
+  <!-- Canopy shifted -2px left -->
+  <rect x="3"  y="5"  width="22" height="13" fill="#306838"/>
+  <rect x="3"  y="7"  width="24" height="11" fill="#4A9050"/>
+  <rect x="5"  y="3"  width="18" height="7"  fill="#4A9050"/>
+  <rect x="9"  y="1"  width="10" height="5"  fill="#5AAA62"/>
+  <!-- Highlight on left (wind-lit side) -->
+  <rect x="6"  y="5"  width="6"  height="5"  fill="#5AAA62"/>
+  <rect x="9"  y="3"  width="6"  height="3"  fill="#6ABD72"/>
+  <!-- Shadow on right -->
+  <rect x="22" y="13" width="5"  height="5"  fill="#256030"/>
+  <rect x="3"  y="16" width="22" height="4"  fill="#306838"/>
+</svg>

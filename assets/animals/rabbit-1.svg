@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Rabbit state 1: sitting idle -->
+  <!-- Shadow -->
+  <rect x="9" y="30" width="14" height="2" fill="#000000" opacity="0.25"/>
+  <!-- Tail -->
+  <rect x="20" y="18" width="4" height="4" fill="#FFFFFF"/>
+  <rect x="21" y="17" width="3" height="4" fill="#F0E8E0"/>
+  <!-- Body -->
+  <rect x="10" y="16" width="12" height="12" fill="#D8D0C8"/>
+  <rect x="9"  y="17" width="14" height="10" fill="#E8E0D8"/>
+  <rect x="9"  y="17" width="2"  height="10" fill="#F0E8E0"/>
+  <!-- Front paws -->
+  <rect x="11" y="26" width="4" height="3" fill="#C8C0B8"/>
+  <rect x="17" y="26" width="4" height="3" fill="#C8C0B8"/>
+  <!-- Head -->
+  <rect x="11" y="8"  width="10" height="9"  fill="#E8E0D8"/>
+  <rect x="10" y="9"  width="12" height="7"  fill="#F0E8E0"/>
+  <rect x="10" y="9"  width="2"  height="7"  fill="#FFFFFF"/>
+  <!-- Ears up -->
+  <rect x="12" y="1"  width="3"  height="9"  fill="#E0D8D0"/>
+  <rect x="13" y="2"  width="1"  height="7"  fill="#E8A8A8"/>
+  <rect x="18" y="1"  width="3"  height="9"  fill="#E0D8D0"/>
+  <rect x="19" y="2"  width="1"  height="7"  fill="#E8A8A8"/>
+  <!-- Eyes -->
+  <rect x="12" y="11" width="3" height="3" fill="#2C1010"/>
+  <rect x="19" y="11" width="3" height="3" fill="#2C1010"/>
+  <rect x="14" y="11" width="1" height="1" fill="#FFFFFF"/>
+  <rect x="21" y="11" width="1" height="1" fill="#FFFFFF"/>
+  <!-- Nose -->
+  <rect x="15" y="15" width="3" height="1" fill="#E89090"/>
+  <!-- Whisker dots -->
+  <rect x="11" y="14" width="1" height="1" fill="#B0A8A0"/>
+  <rect x="22" y="14" width="1" height="1" fill="#B0A8A0"/>
+</svg>

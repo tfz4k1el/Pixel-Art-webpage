@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Horizontal rail top -->
+  <rect x="0" y="10" width="32" height="4" fill="#A07020"/>
+  <rect x="0" y="10" width="32" height="1" fill="#C49428"/>
+  <rect x="0" y="13" width="32" height="1" fill="#7A5510"/>
+  <!-- Horizontal rail bottom -->
+  <rect x="0" y="21" width="32" height="4" fill="#A07020"/>
+  <rect x="0" y="21" width="32" height="1" fill="#C49428"/>
+  <rect x="0" y="24" width="32" height="1" fill="#7A5510"/>
+
+  <!-- Plank 1 (left) -->
+  <rect x="1"  y="3" width="7" height="29" fill="#8B6014"/>
+  <rect x="1"  y="3" width="1" height="29" fill="#B07828"/>
+  <rect x="7"  y="3" width="1" height="29" fill="#6B4A0F"/>
+  <!-- Pointed top 1 -->
+  <rect x="2"  y="1" width="5" height="4" fill="#8B6014"/>
+  <rect x="3"  y="0" width="3" height="3" fill="#9A6E1A"/>
+  <rect x="2"  y="1" width="1" height="3" fill="#B07828"/>
+
+  <!-- Plank 2 (centre) -->
+  <rect x="12" y="3" width="8" height="29" fill="#8B6014"/>
+  <rect x="12" y="3" width="1" height="29" fill="#B07828"/>
+  <rect x="19" y="3" width="1" height="29" fill="#6B4A0F"/>
+  <!-- Pointed top 2 -->
+  <rect x="13" y="1" width="6" height="4" fill="#8B6014"/>
+  <rect x="14" y="0" width="4" height="3" fill="#9A6E1A"/>
+  <rect x="13" y="1" width="1" height="3" fill="#B07828"/>
+
+  <!-- Plank 3 (right) -->
+  <rect x="24" y="3" width="7" height="29" fill="#8B6014"/>
+  <rect x="24" y="3" width="1" height="29" fill="#B07828"/>
+  <rect x="30" y="3" width="1" height="29" fill="#6B4A0F"/>
+  <!-- Pointed top 3 -->
+  <rect x="25" y="1" width="5" height="4" fill="#8B6014"/>
+  <rect x="26" y="0" width="3" height="3" fill="#9A6E1A"/>
+  <rect x="25" y="1" width="1" height="3" fill="#B07828"/>
+</svg>

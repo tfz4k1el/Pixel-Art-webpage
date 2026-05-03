@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Wind state 2: reflections shift 2px right (wind pressure bows glass outward) -->
+  <rect width="32" height="32" fill="#7A5510"/>
+  <rect x="0"  y="0" width="32" height="2"  fill="#A07020"/>
+  <rect x="0"  y="0" width="2"  height="32" fill="#A07020"/>
+  <rect x="30" y="0" width="2"  height="32" fill="#523317"/>
+  <rect x="0"  y="30" width="32" height="2" fill="#523317"/>
+  <!-- Four glass panes -->
+  <rect x="3"  y="3"  width="12" height="12" fill="#A8D8EA"/>
+  <rect x="17" y="3"  width="12" height="12" fill="#A8D8EA"/>
+  <rect x="3"  y="17" width="12" height="12" fill="#A8D8EA"/>
+  <rect x="17" y="17" width="12" height="12" fill="#A8D8EA"/>
+  <!-- Glass reflections shifted +2px right (bowed by wind) -->
+  <rect x="6"  y="4"  width="5"  height="4"  fill="#C8EEFF"/>
+  <rect x="20" y="4"  width="5"  height="4"  fill="#C8EEFF"/>
+  <rect x="6"  y="18" width="5"  height="4"  fill="#C8EEFF"/>
+  <rect x="20" y="18" width="5"  height="4"  fill="#C8EEFF"/>
+  <!-- Bright edge on left side of panes (wind pressure highlight) -->
+  <rect x="3"  y="3"  width="1"  height="12" fill="#D8F0FF"/>
+  <rect x="17" y="3"  width="1"  height="12" fill="#D8F0FF"/>
+  <rect x="3"  y="17" width="1"  height="12" fill="#D8F0FF"/>
+  <rect x="17" y="17" width="1"  height="12" fill="#D8F0FF"/>
+  <!-- Cross dividers -->
+  <rect x="14" y="0"  width="4"  height="32" fill="#7A5510"/>
+  <rect x="0"  y="14" width="32" height="4"  fill="#7A5510"/>
+  <rect x="14" y="0"  width="1"  height="32" fill="#A07020"/>
+  <rect x="0"  y="14" width="32" height="1"  fill="#A07020"/>
+</svg>

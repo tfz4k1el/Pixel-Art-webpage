@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Bright midday log — warm golden wood, prominent end grain cross-section -->
+
+  <!-- Cast shadow on grass -->
+  <rect x="6"  y="25" width="23" height="3"  fill="#3A5020" opacity="0.28"/>
+
+  <!-- ── Barrel body (cylinder extending right) ── -->
+  <!-- Shadow underside (away from sun) -->
+  <rect x="11" y="21" width="21" height="3"  fill="#6E350C"/>
+  <!-- Lower bark grain line -->
+  <rect x="11" y="20" width="21" height="1"  fill="#8C4A20"/>
+  <!-- Mid body (bark colour) -->
+  <rect x="11" y="16" width="21" height="5"  fill="#B87840"/>
+  <!-- Upper mid bark grain line -->
+  <rect x="11" y="15" width="21" height="1"  fill="#A06428"/>
+  <!-- Top face (sunlit warm wood) -->
+  <rect x="11" y="11" width="21" height="5"  fill="#D4A045"/>
+  <!-- Top highlight strip (direct overhead sun) -->
+  <rect x="12" y="11" width="19" height="2"  fill="#F4CC5C"/>
+  <!-- Brightest peak highlight -->
+  <rect x="13" y="11" width="17" height="1"  fill="#FFE070"/>
+  <!-- Right end cap (in shadow) -->
+  <rect x="30" y="12" width="2"  height="12" fill="#5E2E08"/>
+  <rect x="29" y="13" width="1"  height="10" fill="#7A4018"/>
+
+  <!-- ── End grain oval (left face cross-section) ── -->
+  <!-- Outermost bark ring — very dark -->
+  <rect x="5"  y="9"  width="6"  height="2"  fill="#4A2608"/>
+  <rect x="3"  y="11" width="8"  height="2"  fill="#4A2608"/>
+  <rect x="2"  y="13" width="9"  height="8"  fill="#4A2608"/>
+  <rect x="3"  y="21" width="8"  height="2"  fill="#4A2608"/>
+  <rect x="5"  y="23" width="6"  height="2"  fill="#4A2608"/>
+  <!-- Bark inner transition -->
+  <rect x="6"  y="10" width="4"  height="1"  fill="#7A4218"/>
+  <rect x="4"  y="12" width="6"  height="1"  fill="#7A4218"/>
+  <rect x="3"  y="13" width="1"  height="8"  fill="#7A4218"/>
+  <rect x="10" y="13" width="1"  height="8"  fill="#7A4218"/>
+  <rect x="4"  y="21" width="6"  height="1"  fill="#7A4218"/>
+  <rect x="6"  y="22" width="4"  height="1"  fill="#7A4218"/>
+  <!-- Sapwood body fill -->
+  <rect x="4"  y="13" width="7"  height="8"  fill="#C88440"/>
+  <rect x="5"  y="11" width="5"  height="2"  fill="#C08038"/>
+  <rect x="5"  y="21" width="5"  height="2"  fill="#B87030"/>
+  <!-- Outer growth ring (annular ring, dark) -->
+  <rect x="6"  y="13" width="4"  height="1"  fill="#8C5018"/>
+  <rect x="5"  y="14" width="1"  height="6"  fill="#8C5018"/>
+  <rect x="5"  y="19" width="4"  height="1"  fill="#8C5018"/>
+  <rect x="9"  y="14" width="1"  height="6"  fill="#9A5A20"/>
+  <!-- Heartwood fill (warm golden) -->
+  <rect x="6"  y="14" width="4"  height="6"  fill="#E8A838"/>
+  <!-- Inner heartwood highlight -->
+  <rect x="7"  y="14" width="3"  height="1"  fill="#F2B848"/>
+  <rect x="6"  y="15" width="4"  height="4"  fill="#F0B045"/>
+  <!-- Centre sunlit highlight -->
+  <rect x="7"  y="15" width="2"  height="3"  fill="#FFD060"/>
+  <rect x="7"  y="16" width="2"  height="1"  fill="#FFF090"/>
+
+  <!-- Grass tufts at base -->
+  <rect x="2"  y="25" width="2"  height="4"  fill="#5AAA38"/>
+  <rect x="15" y="25" width="2"  height="3"  fill="#4A9A2C"/>
+  <rect x="24" y="25" width="2"  height="4"  fill="#5AAA38"/>
+  <rect x="29" y="25" width="2"  height="3"  fill="#6ABE48"/>
+</svg>

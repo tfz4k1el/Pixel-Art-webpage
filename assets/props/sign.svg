@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Wooden sign — warm golden-brown sunlit wood, midday -->
+
+  <!-- Post shadow -->
+  <rect x="16" y="19" width="4"  height="13" fill="#8C5A10"/>
+  <!-- Post -->
+  <rect x="14" y="18" width="4"  height="14" fill="#C88828"/>
+  <rect x="14" y="18" width="1"  height="14" fill="#EAA83A"/>
+  <rect x="17" y="18" width="1"  height="14" fill="#A87020"/>
+
+  <!-- Board outer shadow -->
+  <rect x="2"  y="3"  width="28" height="17" fill="#7A4E0A"/>
+  <!-- Board face -->
+  <rect x="3"  y="4"  width="26" height="15" fill="#D49828"/>
+  <!-- Top highlight (sunlit) -->
+  <rect x="3"  y="4"  width="26" height="2"  fill="#F0BE48"/>
+  <rect x="3"  y="4"  width="2"  height="15" fill="#F0BE48"/>
+  <!-- Right / bottom shadow edge -->
+  <rect x="27" y="4"  width="2"  height="15" fill="#A87020"/>
+  <rect x="3"  y="17" width="26" height="2"  fill="#A87020"/>
+  <!-- Plank grain lines -->
+  <rect x="3"  y="9"  width="26" height="1"  fill="#C08820"/>
+  <rect x="3"  y="14" width="26" height="1"  fill="#B87818"/>
+
+  <!-- Text / writing lines (carved-in darker) -->
+  <rect x="7"  y="7"  width="9"  height="2"  fill="#7A4E0A"/>
+  <rect x="18" y="7"  width="7"  height="2"  fill="#7A4E0A"/>
+  <rect x="7"  y="11" width="16" height="2"  fill="#7A4E0A"/>
+  <rect x="7"  y="15" width="11" height="1"  fill="#7A4E0A"/>
+
+  <!-- Corner nail bolts (brass, glinting) -->
+  <rect x="4"  y="5"  width="3"  height="3"  fill="#F8D040"/>
+  <rect x="5"  y="5"  width="1"  height="1"  fill="#FFFAA0"/>
+  <rect x="25" y="5"  width="3"  height="3"  fill="#F8D040"/>
+  <rect x="26" y="5"  width="1"  height="1"  fill="#FFFAA0"/>
+  <rect x="4"  y="15" width="3"  height="3"  fill="#F8D040"/>
+  <rect x="5"  y="15" width="1"  height="1"  fill="#FFFAA0"/>
+  <rect x="25" y="15" width="3"  height="3"  fill="#F8D040"/>
+  <rect x="26" y="15" width="1"  height="1"  fill="#FFFAA0"/>
+</svg>

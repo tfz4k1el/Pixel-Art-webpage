@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Top-down dark grass tile (shaded / under trees / indoors) -->
+  <rect width="32" height="32" fill="#3A6B1A"/>
+
+  <!-- Light patches -->
+  <rect x="4"  y="3"  width="3" height="2" fill="#4E8525"/>
+  <rect x="16" y="1"  width="2" height="3" fill="#4E8525"/>
+  <rect x="26" y="4"  width="3" height="2" fill="#4A8025"/>
+  <rect x="10" y="7"  width="2" height="3" fill="#4E8525"/>
+  <rect x="22" y="9"  width="3" height="2" fill="#4A8025"/>
+
+  <!-- Dark patches -->
+  <rect x="1"  y="6"  width="2" height="3" fill="#2A5010"/>
+  <rect x="12" y="4"  width="3" height="2" fill="#2A5010"/>
+  <rect x="28" y="7"  width="2" height="3" fill="#2A5010"/>
+  <rect x="19" y="5"  width="2" height="2" fill="#1F400C"/>
+
+  <!-- Mid light -->
+  <rect x="3"  y="12" width="3" height="2" fill="#4E8525"/>
+  <rect x="14" y="11" width="2" height="3" fill="#4A8025"/>
+  <rect x="24" y="13" width="3" height="2" fill="#4E8525"/>
+  <rect x="8"  y="15" width="2" height="3" fill="#4E8525"/>
+  <rect x="29" y="14" width="2" height="3" fill="#4A8025"/>
+
+  <!-- Mid dark -->
+  <rect x="0"  y="13" width="2" height="2" fill="#2A5010"/>
+  <rect x="19" y="12" width="3" height="2" fill="#2A5010"/>
+  <rect x="11" y="10" width="2" height="2" fill="#1F400C"/>
+  <rect x="27" y="11" width="2" height="2" fill="#1F400C"/>
+
+  <!-- Lower light -->
+  <rect x="5"  y="20" width="3" height="2" fill="#4E8525"/>
+  <rect x="15" y="21" width="2" height="3" fill="#4A8025"/>
+  <rect x="25" y="19" width="3" height="2" fill="#4E8525"/>
+  <rect x="9"  y="23" width="2" height="3" fill="#4E8525"/>
+  <rect x="21" y="22" width="3" height="2" fill="#4A8025"/>
+
+  <!-- Lower dark -->
+  <rect x="1"  y="22" width="2" height="3" fill="#2A5010"/>
+  <rect x="12" y="20" width="3" height="2" fill="#2A5010"/>
+  <rect x="28" y="21" width="2" height="3" fill="#1F400C"/>
+  <rect x="18" y="19" width="2" height="2" fill="#1F400C"/>
+
+  <!-- Bottom row -->
+  <rect x="4"  y="27" width="3" height="2" fill="#4E8525"/>
+  <rect x="14" y="28" width="2" height="3" fill="#4A8025"/>
+  <rect x="24" y="27" width="3" height="2" fill="#4E8525"/>
+  <rect x="0"  y="29" width="2" height="2" fill="#2A5010"/>
+  <rect x="20" y="28" width="3" height="2" fill="#2A5010"/>
+  <rect x="30" y="27" width="2" height="3" fill="#4E8525"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+  <!-- Wind state 2: door top panel pressed 1px right by wind — subtle flex -->
+  <rect x="0"  y="0" width="32" height="32" fill="#523317"/>
+  <rect x="2"  y="1" width="28" height="31" fill="#7A5510"/>
+  <rect x="4"  y="2" width="24" height="30" fill="#A07020"/>
+  <!-- Top panel shifted 1px right (wind flex) -->
+  <rect x="7"  y="4"  width="20" height="10" fill="#B88030"/>
+  <rect x="7"  y="4"  width="20" height="1"  fill="#D4A840"/>
+  <rect x="7"  y="13" width="20" height="1"  fill="#8B6014"/>
+  <rect x="8"  y="5"  width="1"  height="8"  fill="#D4A840"/>
+  <rect x="26" y="5"  width="1"  height="8"  fill="#8B6014"/>
+  <!-- Tiny gap on left hinge edge (wind pushing from left) -->
+  <rect x="4"  y="2"  width="3"  height="13" fill="#7A5510"/>
+  <rect x="4"  y="2"  width="1"  height="13" fill="#523317"/>
+  <!-- Rail -->
+  <rect x="4"  y="15" width="24" height="3"  fill="#A07020"/>
+  <!-- Bottom panel (stays fixed — hinged at bottom) -->
+  <rect x="6"  y="18" width="20" height="11" fill="#B88030"/>
+  <rect x="6"  y="18" width="20" height="1"  fill="#D4A840"/>
+  <rect x="6"  y="28" width="20" height="1"  fill="#8B6014"/>
+  <rect x="7"  y="19" width="1"  height="9"  fill="#D4A840"/>
+  <rect x="25" y="19" width="1"  height="9"  fill="#8B6014"/>
+  <!-- Centre dividers -->
+  <rect x="16" y="4"  width="2"  height="10" fill="#A07020"/>
+  <rect x="15" y="18" width="2"  height="11" fill="#A07020"/>
+  <!-- Handle (shifts with top panel) -->
+  <rect x="25" y="15" width="3"  height="2"  fill="#F0C030"/>
+  <rect x="26" y="13" width="2"  height="6"  fill="#D4A820"/>
+  <rect x="26" y="13" width="1"  height="6"  fill="#F0D040"/>
+  <!-- Frame -->
+  <rect x="0"  y="0" width="2"  height="32" fill="#6B4A14"/>
+  <rect x="30" y="0" width="2"  height="32" fill="#3A2010"/>
+</svg>
