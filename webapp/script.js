@@ -86,6 +86,13 @@ document.getElementById('identity-submit').addEventListener('click', () => {
     }
 });
 
+// Setup close button for identity modal
+document.getElementById('close-identity-btn').addEventListener('click', () => {
+    document.getElementById('identity-modal').classList.remove('popup-visible');
+    identityOpen = false;
+    document.getElementById('identity-input').value = '';
+});
+
 // Setup close button for paper
 document.getElementById('close-paper-btn').addEventListener('click', () => {
     document.getElementById('paper-modal').classList.remove('popup-visible');
@@ -93,8 +100,18 @@ document.getElementById('close-paper-btn').addEventListener('click', () => {
     identityOpen = false; // Reset identity state so they can open it again if they want
 });
 
+let rockPopupDismissed = false;
+
+// Setup close button for rock popup
+document.getElementById('close-rock-popup-btn').addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent triggering the popup click event
+    popupEl.classList.remove('popup-visible');
+    rockPopupDismissed = true;
+});
+
 // Setup popup tap interaction
-popupEl.addEventListener('click', () => {
+popupEl.addEventListener('click', (e) => {
+    if (e.target.id === 'close-rock-popup-btn') return;
     if (popupEl.classList.contains('popup-visible') && !identityOpen && !paperOpen) {
         identityOpen = true;
         document.getElementById('identity-modal').classList.add('popup-visible');
@@ -334,9 +351,12 @@ function update() {
 
     // Check rock interaction and show/hide popup
     if (isTouchingRock(playerX, playerY)) {
-        popupEl.classList.add('popup-visible');
+        if (!rockPopupDismissed) {
+            popupEl.classList.add('popup-visible');
+        }
     } else {
         popupEl.classList.remove('popup-visible');
+        rockPopupDismissed = false; // Reset when they walk away
     }
 
     requestAnimationFrame(update);
