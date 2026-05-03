@@ -193,11 +193,11 @@ joystickZone.addEventListener('touchend', resetJoystick);
 joystickZone.addEventListener('touchcancel', resetJoystick);
 
 // Animation state
-const standFrame = '../assets/characters/Character%200.png';
+const standFrame = './assets/characters/Character%200.png';
 const walkFrames = [
-    '../assets/characters/Character%201.png',
-    '../assets/characters/Character%202.png',
-    '../assets/characters/Character%203.png'
+    './assets/characters/Character%201.png',
+    './assets/characters/Character%202.png',
+    './assets/characters/Character%203.png'
 ];
 let currentFrame = 0;
 let animationTimer = 0;

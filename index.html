@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chunnu Day Walk</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./webapp/style.css">
 </head>
 <body>
     <div class="wrapper">
         <div id="game-container">
-            <img id="bg-map" src="../assets/Frame 5.svg" alt="Map background">
-            <img id="player" src="../assets/characters/Character%200.png" alt="Player Character">
+            <img id="bg-map" src="./assets/Frame%205.svg" alt="Map background">
+            <img id="player" src="./assets/characters/Character%200.png" alt="Player Character">
             
             <!-- Virtual Joystick Zone -->
             <div id="joystick-zone">
@@ -22,7 +22,7 @@
             <!-- Popup Container -->
             <div id="popup-container" class="popup-hidden">
                 <button id="close-rock-popup-btn" class="close-btn" aria-label="Close">&times;</button>
-                <img src="../assets/pop%20up.png" alt="Rock Interaction Popup">
+                <img src="./assets/pop%20up.png" alt="Rock Interaction Popup">
                 <div class="popup-text">
                     <h3>You found a letter</h3>
                     <p>Tap or press Enter to open</p>
@@ -43,7 +43,7 @@
             <div id="paper-modal" class="popup-hidden">
                 <button id="close-paper-btn" class="close-btn" aria-label="Close">&times;</button>
                 <div class="paper-content">
-                    <img src="../assets/Paper.svg" class="paper-bg" alt="Paper Background">
+                    <img src="./assets/Paper.svg" class="paper-bg" alt="Paper Background">
                     <div class="paper-text">
                         Happy Birthday Chunnuuuuu!!!<br><br>
                         Sooooooo hehehhehe....<br>
@@ -59,6 +59,6 @@
     <!-- Hidden canvas for pixel perfect collision detection -->
     <canvas id="hitbox-canvas" style="display: none;"></canvas>
     
-    <script src="./script.js"></script>
+    <script src="./webapp/script.js"></script>
 </body>
 </html>
